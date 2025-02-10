@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teddy Day! 🧸💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background: linear-gradient(135deg, #ffdde1, #fbc2eb);
+        text-align: center;
+        overflow: hidden;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        position: relative;
+      }
+      .gif_container img {
+        width: 300px;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .gif_container img:hover {
+        transform: scale(1.1);
+      }
+      .header_text {
+        font-family: 'Pacifico', cursive;
+        font-size: 60px;
+        color: #ff69b4;
+        text-shadow: 0 0 15px rgba(255, 105, 180, 0.9);
+        margin-bottom: 10px;
+      }
+      .description {
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        color: #555;
+        margin-top: 10px;
+      }
+      .running-teddies {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        animation: run-together 3s infinite alternate;
+      }
+      .running-teddies img {
+        width: 150px;
+      }
+      @keyframes run-together {
+        0% {
+          transform: translateX(-50px);
+        }
+        100% {
+          transform: translateX(50px);
+        }
+      }
+      .hearts {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        color: red;
+        animation: floatHearts 2s infinite alternate;
+      }
+      @keyframes floatHearts {
+        0% {
+          opacity: 0;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header_text">Happy Teddy Day! 🧸💕</h1>
+    <div class="container">
+      <div class="gif_container">
+        <img src="https://media1.tenor.com/m/zYCqTqDSvzsAAAAC/teddy-bear-teddy-bear-love.gif" alt="Adorable Teddy" />
+      </div>
+      <p class="description">A teddy bear is your cuddle buddy, your best friend, and your forever comfort. 💖</p>
+      <div class="running-teddies">
+        <img src="https://media.tenor.com/IcAJqEsCqu8AAAAi/cute-teddy-bear.gif" alt="Running Teddy 1">
+        <img src="https://media.tenor.com/IcAJqEsCqu8AAAAi/cute-teddy-bear.gif" alt="Running Teddy 2">
+      </div>
+      <div class="hearts">❤️💖💕</div>
+    </div>
+  </body>
+</html>
